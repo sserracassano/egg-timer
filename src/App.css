@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  background-color: beige;
+}
+
+.tile {
+  /* width: 100%;*/
+  padding: 16px;
+  gap: 20px;
+  /* font-size: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .App-logo {
@@ -35,4 +54,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  font-size: 12px;
+  font-weight: 40;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-indent: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }

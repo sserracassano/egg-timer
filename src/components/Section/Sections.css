@@ -1,0 +1,58 @@
+.selection {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: rgba(0.9, 0.9, 0.9, 0.05);
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.selected {
+  background-color: rgb(255, 186, 134);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(79, 37, 5);
+}
+
+input[type="range"] {
+  accent-color: coral;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+  animate: 0.2s;
+  background: white;
+  border-radius: 4px;
+}
+
+.temp-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(79, 37, 5);
+}
+
+input {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
