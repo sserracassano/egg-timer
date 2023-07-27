@@ -76,3 +76,12 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+.time-text {
+  font-size: 32px;
+  font-weight: 600;
+}
+.player-text {
+  font-size: 16px;
+  font-weight: 400;
+}

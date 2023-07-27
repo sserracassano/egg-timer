@@ -62,7 +62,7 @@ function App() {
   const getSeconds = (remainingTime: any) => {
     return (remainingTime - 60 * Number(getMinutes(remainingTime)))
       .toString()
-      .padEnd(2, "0");
+      .padStart(2, "0");
   };
 
   const getMinutes = (remainingTime: any) => {
@@ -127,10 +127,10 @@ function App() {
                 {/* <div className="time">{remainingTime}</div> */}
                 {/* In questo caso, perché la classe non funzionava e l'inline sì? */}
 
-                <div style={{ fontSize: "20px", fontWeight: "600" }}>
+                <div className="time-text">
                   {getMinutes(remainingTime)}:{getSeconds(remainingTime)}
                 </div>
-                <div style={{ fontSize: "12px", fontWeight: "400" }}>
+                <div className="player-text">
                   {isTimerPlaying ? "Stop" : time > 0 ? "Play" : "Start"}
                 </div>
               </div>
